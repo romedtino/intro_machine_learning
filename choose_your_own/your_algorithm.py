@@ -34,7 +34,7 @@ plt.show()
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.metrics import accuracy_score
 
-clf = AdaBoostClassifier(n_estimators=20, algorithm='SAMME')
+clf = AdaBoostClassifier(n_estimators=20)
 clf = clf.fit(features_train, labels_train)
 
 pred = clf.predict(features_test)
